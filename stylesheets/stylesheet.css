@@ -1,5 +1,4 @@
-* {
-  box-sizing: border-box; }
+
 
 body {
   padding: 0;
@@ -7,7 +6,13 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #606c71; }
+  color: #606c71; 
+  
+  /*background-position: center; */
+  background-color: #000000;
+  background: url(../images/Earth_Western_Hemisphere.png) no-repeat;
+  background-size: 150%; /* To fill the dimensions of container (button), or */
+  background-position: -0% 140px;}
 
 a {
   color: #1e6bb8;
@@ -57,11 +62,13 @@ a {
   color: #fff;
   text-align: center;
   background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #159957); }
+  background-image: linear-gradient(120deg, #155799, #159957, 0.1); }
 
 @media screen and (min-width: 64em) {
   .page-header {
     padding: 5rem 6rem; } }
+
+
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .page-header {
@@ -223,11 +230,13 @@ a {
 .site-footer {
   padding-top: 2rem;
   margin-top: 2rem;
-  border-top: solid 1px #eff0f1; }
+  border-top: solid 1px #eff0f1;
+ }
 
 .site-footer-owner {
   display: block;
-  font-weight: bold; }
+  font-weight: bold; 
+  background-color: black; }
 
 .site-footer-credits {
   color: #819198; }
@@ -238,8 +247,43 @@ a {
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .site-footer {
-    font-size: 1rem; } }
+    font-size: 1rem;} }
 
 @media screen and (max-width: 42em) {
   .site-footer {
-    font-size: 0.9rem; } }
+    font-size: 0.9rem;} }
+
+
+#wrap {
+  background: none repeat scroll 0 0 #fff;
+  border: 1px solid #999999;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 0 10px #333333, 1px 1px 200px #bcbcbc inset;
+  color: #666666;
+  font-family: arial,serif;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 40px auto 25px auto;
+  padding: 30px;
+  text-shadow: 1px 1px 0 #FFFFFF;
+  width: 710px;
+  height: 230px;
+  opacity: .9;
+  position: relative;
+  z-index: 99;
+}
+
+#container {
+  min-height: 595px;
+  /*background: transparent url(../images/highlight-bg.jpg) 50% 50% no-repeat;*/
+}
+
+.inner {
+  width: 650px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#container .inner img {
+  max-width: 50%;
+}
